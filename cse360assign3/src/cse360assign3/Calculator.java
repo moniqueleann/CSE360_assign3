@@ -1,5 +1,6 @@
 /** This program replicates the function of a calculator.
  * 
+ * 
  * @author: Monique Oliver
  * 			Pin 620
  * 			Assignment 3
@@ -13,11 +14,13 @@ package cse360assign3;
 public class Calculator {
 
 	private int total;
+	private String history;
 	
 	/** The constructor for the Calculator class initializes
 	 *  the variable total. */
 	public Calculator () {
 		total = 0;  // not needed - included for clarity
+		history = "0";
 	}
 	
 	/** The getTotal method gets the total. */
@@ -28,16 +31,19 @@ public class Calculator {
 	/** The add method adds a value to the total. */
 	public void add (int value) {
 		total += value;
+		history += " + " + value;
 	}
 	
 	/** The subtract method subtracts a value to the total. */
 	public void subtract (int value) {
 		total -= value;
+		history += " - " + value;
 	}
 	
 	/** The multiply method multiplies a value to the total. */
 	public void multiply (int value) {
 		total = total * value;
+		history += " * " + value;
 	}
 	
 	/** The divide method divides the total by a value. */
@@ -46,11 +52,13 @@ public class Calculator {
 			total = total / value;
 		else
 			total = 0;
+		
+		history += " / " + value;
 	}
 	
 	/** The method getHistory returns the previous calculations
 	 *  done. */
 	public String getHistory () {
-		return "";
+		return history;
 	}
 }
