@@ -10,6 +10,8 @@ package cse360assign3;
 
 import static org.junit.Assert.*;
 
+import org.junit.Test;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
@@ -39,52 +41,45 @@ public class CalculatorTest {
 	
 	
 	/** Tests the calculator constructor. */
+	@Test
 	public void testCalculator() {
 		fail("Not yet implemented");
 	}
 	
 	/** Tests the getTotal method. */
+	@Test
 	public void testGetTotal() {
-		Calculator calc = new Calculator();
-		assertEquals(calc.getTotal(),0);
+
 	}
 	
 	/** Tests the testAdd method. */
+	@Test
 	public void testAdd() {
-		Calculator calc = new Calculator();
-		calc.add(5);
-		assertEquals(calc.getTotal(),5);
+
 	}
 	
 	/** Tests the subtract method. */
+	@Test
 	public void testSubtract() {
-		Calculator calc = new Calculator();
-		calc.subtract(5);
-		assertEquals(calc.getTotal(),-5);
+
 	}
 	
 	/** Tests the multiply method. */
+	@Test
 	public void testMultiply() { 
-		Calculator calc = new Calculator();
-		calc.add(5);
-		calc.multiply(5);
-		assertEquals(calc.getTotal(),25);
+
 	}
 	
 	/** Tests the divide method. */
+	@Test
 	public void testDivide() {
-		Calculator calc = new Calculator();
-		calc.add(5);
-		calc.divide(5);
-		assertEquals(calc.getTotal(),1);
-		calc.divide(0);
-		assertEquals(calc.getTotal(),0);
+
 	}
 	
 	/** Tests the getHistory method. */
+	@Test
 	public void testGetHistory() { 
-		Calculator calc = new Calculator();
-		assertEquals(calc.getHistory(),"");
+
 	}
 	
 }
