@@ -30,7 +30,7 @@ public class Calculator {
 	 * 
 	 * */
 	public void add (int value) {
-		
+
 	}
 	
 	/** This method subtracts a value to the total.
@@ -39,7 +39,7 @@ public class Calculator {
 	 * 
 	 * */
 	public void subtract (int value) {
-		
+
 	}
 	
 	/** This method multiplies a value to the total.
@@ -48,7 +48,7 @@ public class Calculator {
 	 * 
 	 * */
 	public void multiply (int value) {
-		
+
 	}
 	
 	/** This method divides the total by a value. 
@@ -57,7 +57,7 @@ public class Calculator {
 	 * 
 	 * */
 	public void divide (int value) {
-		
+
 	}
 	
 	/** This method returns the previous calculations. 

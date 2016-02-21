@@ -21,6 +21,12 @@ public class CalculatorTest {
 		assertNotNull(calc);
 	}
 	
+	/** This method tests the getTotal method. */
+	@Test
+	public void testGetTotal() {
+		fail("Not yet implemented");
+	}
+	
 	/** This method tests the add method. */
 	@Test
 	public void testAdd() {
@@ -45,7 +51,7 @@ public class CalculatorTest {
 		fail("Not yet implemented");
 	}
 	
-	/** This method tests the getHistory method. */
+	/** This method tests the get*/
 	@Test
 	public void testGetHistory() {
 		fail("Not yet implemented");
