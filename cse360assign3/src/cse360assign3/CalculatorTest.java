@@ -1,106 +1,56 @@
-/** The CalculatorTest class tests the methods found
- *  in the calculator class.
- *  
- *  @author: Monique Oliver
- *  		 Pin 620
- *  		 Assignment 3
+/** This class tests the methods within the Calculator class. 
  * 
- */
+ *  @author Monique Oliver
+ *  		Pin 620
+ *  		Assignment 3
+ * 
+ * */
+
 package cse360assign3;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
-import org.junit.After;
-import org.junit.Before;
-
-
-/** The CalculatorTest class tests the methods found
- *  in the calculator class.
- */
 public class CalculatorTest {
 
-	private final ByteArrayOutputStream out = new ByteArrayOutputStream();
-	private final ByteArrayOutputStream err = new ByteArrayOutputStream();
-	
-	@Before
-	public void setUpStreams() {
-		System.setOut(new PrintStream(out));
-		System.setErr(new PrintStream(err));
-	}
-	
-	@After
-	public void cleanUpStreams() {
-		System.setOut(null);
-		System.setErr(null);
-	}
-	
-	
-	/** Tests the calculator constructor. */
+	/** This method tests constructor for the Calculator class. */
 	@Test
-	public void testCalculator() {
+	public void tesCalculator() {
 		Calculator calc = new Calculator();
-		assertEquals(calc, calc);
+		assertNotNull(calc);
 	}
 	
-	/** Tests the getTotal method. */
-	@Test
-	public void testGetTotal() {
-		Calculator calc = new Calculator();
-		assertEquals(calc.getTotal(),0);
-	}
-	
-	/** Tests the testAdd method. */
+	/** This method tests the add method. */
 	@Test
 	public void testAdd() {
-		Calculator calc = new Calculator();
-		calc.add(5);
-		assertEquals(calc.getTotal(),5);
+		fail("Not yet implemented");
 	}
 	
-	/** Tests the subtract method. */
+	/** This method tests the subtract method. */
 	@Test
 	public void testSubtract() {
-		Calculator calc = new Calculator();
-		calc.subtract(5);
-		assertEquals(calc.getTotal(),-5);
+		fail("Not yet implemented");
 	}
 	
-	/** Tests the multiply method. */
+	/** This method tests the multiply method. */
 	@Test
-	public void testMultiply() { 
-		Calculator calc = new Calculator();
-		calc.add(5);
-		calc.multiply(5);
-		assertEquals(calc.getTotal(),25);
+	public void testMultiply() {
+		fail("Not yet implemented");
 	}
 	
-	/** Tests the divide method. */
+	/** This method tests the divide method. */
 	@Test
 	public void testDivide() {
-		Calculator calc = new Calculator();
-		calc.add(5);
-		calc.divide(5);
-		assertEquals(calc.getTotal(),1);
-		calc.divide(0);
-		assertEquals(calc.getTotal(),0);
+		fail("Not yet implemented");
 	}
 	
-	/** Tests the getHistory method. */
+	/** This method tests the getHistory method. */
 	@Test
-	public void testGetHistory() { 
-		Calculator calc = new Calculator();
-		calc.add(4);
-		calc.multiply(2);
-		calc.subtract(3);
-		calc.divide(5);
-		calc.add(1);
-		calc.divide(0);
-		assertEquals(calc.getHistory(),"0 + 4 * 2 - 3 / 5 + 1 / 0");
+	public void testGetHistory() {
+		fail("Not yet implemented");
 	}
 	
+	
+
 }
