@@ -24,31 +24,44 @@ public class CalculatorTest {
 	/** This method tests the getTotal method. */
 	@Test
 	public void testGetTotal() {
-		fail("Not yet implemented");
+		Calculator calc = new Calculator();
+		assertEquals(0,calc.getTotal());
 	}
 	
 	/** This method tests the add method. */
 	@Test
 	public void testAdd() {
-		fail("Not yet implemented");
+		Calculator calc = new Calculator();
+		calc.add(5);
+		assertEquals(5,calc.getTotal());
 	}
 	
 	/** This method tests the subtract method. */
 	@Test
 	public void testSubtract() {
-		fail("Not yet implemented");
+		Calculator calc = new Calculator();
+		calc.subtract(5);
+		assertEquals(-5,calc.getTotal());
 	}
 	
 	/** This method tests the multiply method. */
 	@Test
 	public void testMultiply() {
-		fail("Not yet implemented");
+		Calculator calc = new Calculator();
+		calc.add(1);
+		calc.multiply(5);
+		assertEquals(5,calc.getTotal());
 	}
 	
 	/** This method tests the divide method. */
 	@Test
 	public void testDivide() {
-		fail("Not yet implemented");
+		Calculator calc = new Calculator();
+		calc.add(5);
+		calc.divide(5);
+		assertEquals(1,calc.getTotal());
+		calc.divide(0);
+		assertEquals(0,calc.getTotal());
 	}
 	
 	/** This method tests the get*/

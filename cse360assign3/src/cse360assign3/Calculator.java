@@ -21,7 +21,7 @@ public class Calculator {
 	 * @return total The current value of the total
 	 * */
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	/** This method adds a value to the total.
@@ -30,7 +30,7 @@ public class Calculator {
 	 * 
 	 * */
 	public void add (int value) {
-
+		total += value;
 	}
 	
 	/** This method subtracts a value to the total.
@@ -39,7 +39,7 @@ public class Calculator {
 	 * 
 	 * */
 	public void subtract (int value) {
-
+		total -= value;
 	}
 	
 	/** This method multiplies a value to the total.
@@ -48,7 +48,7 @@ public class Calculator {
 	 * 
 	 * */
 	public void multiply (int value) {
-
+		total = total * value;
 	}
 	
 	/** This method divides the total by a value. 
@@ -57,7 +57,10 @@ public class Calculator {
 	 * 
 	 * */
 	public void divide (int value) {
-
+		if (value != 0)
+			total = total / value;
+		else
+			total = 0;
 	}
 	
 	/** This method returns the previous calculations. 
